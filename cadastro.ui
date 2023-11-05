@@ -21,8 +21,8 @@
    <widget class="QPushButton" name="pushButton">
     <property name="geometry">
      <rect>
-      <x>200</x>
-      <y>420</y>
+      <x>400</x>
+      <y>490</y>
       <width>111</width>
       <height>51</height>
      </rect>
@@ -55,7 +55,7 @@ color: rgb(255, 255, 255);</string>
      </font>
     </property>
     <property name="text">
-     <string>ID</string>
+     <string>CÓDIGO</string>
     </property>
    </widget>
    <widget class="QLabel" name="label_2">
@@ -245,6 +245,28 @@ color: rgb(255, 255, 255);</string>
     </property>
     <property name="text">
      <string>CATEGORIA</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_2">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>490</y>
+      <width>111</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>15</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(55, 102, 255);
+color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string>Listar</string>
     </property>
    </widget>
   </widget>
