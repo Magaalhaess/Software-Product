@@ -28,16 +28,25 @@ def funcao_principal():
     print("ID:", linha1)
     print("NOME:", linha2)
     print("VALOR:", linha3)
+    
     cursor = banco.cursor()
     comando_SQL = "INSERT INTO produtos (codigo, nome, valor, categoria) VALUES (%s, %s, %s, %s)"
     dados = (str(linha1),str(linha2),str(linha3),categoria)
     cursor.execute(comando_SQL,dados)
     banco.commit()
+    formulario.lineEdit.setText("")
+    formulario.lineEdit_2.setText("")
+    formulario.lineEdit_3.setText("")
+
+def chama_segunda_tela():
+    segunda_tela.show()
 
 
 app=QtWidgets.QApplication([])
 formulario=uic.loadUi("cadastro.ui")
+segunda_tela=uic.loadUi("listar_dados.ui")
 formulario.pushButton.clicked.connect(funcao_principal)
+formulario.pushButton_2.clicked.connect(chama_segunda_tela)
 
 formulario.show()
 app.exec()
